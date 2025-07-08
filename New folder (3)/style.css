@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+/* Header (Top Search + Icons) */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #ff6000;
+}
+
+.header input[type="search"] {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Product Card */
+.product-card {
+  width: 220px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 12px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.satauri {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.wishlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.wishlist-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gender-tabs,
+.wishlist-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tab,
+.wishlist-tab {
+  font-size: 16px;
+  color: #444;
+  cursor: pointer;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.tab.active,
+.wishlist-tab.active {
+  color: #ff6000;
+  font-weight: bold;
+}
+
+.tab.active::after,
+.wishlist-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6000;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  border: 1px solid #ff6000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter.coupon {
+  background-color: #ffe5f0;
+  border-color: #ff99cc;
+}
+
+.filter.price {
+  background-color: #ffe5e5;
+  border-color: #cc0000;
+}
+
+.filter.active {
+  background-color: #fffaf5;
+  font-weight: bold;
+}
+
+.browse-button {
+  border: 1px solid #ff6000;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.payment-logos img,
+.social-icons img,
+.ssl-logo {
+  height: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ssl-logo {
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  width: 100%;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-bottom li {
+  cursor: pointer;
+  color: #ccc;
+}
